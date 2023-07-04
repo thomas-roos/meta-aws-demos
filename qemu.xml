@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote name="yocto" fetch="https://git.yoctoproject.org/git/" />
+  <remote name="github" fetch="https://github.com/" />
+  <remote name="openembedded" fetch="https://git.openembedded.org/" />
+
+  <!-- YOCTO & OE -->
+
+  <project name="aws4embeddedlinux/meta-aws-demos"  path="meta-aws-demos" remote="github" revision="2f004d5f7ad576ca6eec3cb2bdd710d352b41823" upstream="master" />
+
+  <!-- Yocto/OpenEmbedded things. -->
+  <project name="poky" path="meta-aws-demos/poky" remote="yocto" revision="c4e08719a782fd4119eaf643907b80cebf57f88f" upstream="kirkstone" />
+  <project name="openembedded/meta-openembedded" path="meta-aws-demos/layers/sw/meta-openembedded" remote="github" revision="a8055484f2829e8dfd03d5c8520b2c611aa7ebd2" upstream="kirkstone" />
+
+  <!-- SW -->
+  <project name="aws4embeddedlinux/meta-aws" path="meta-aws-demos/layers/sw/meta-aws" remote="github" revision="434e85de57c3be735e63754cf75037c3ac249d2b" upstream="kirkstone" />
+
+</manifest>
